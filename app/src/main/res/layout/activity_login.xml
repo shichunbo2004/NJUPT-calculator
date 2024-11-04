@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/er2"
+    tools:context=".LoginActivity">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:background="@drawable/tv_style" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/tv_title"
+            android:background="@drawable/zhang01" />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card_view"
+        android:hint="请输入用户名"
+        android:textSize="25sp"
+        android:drawableStart="@drawable/user09"
+        android:drawablePadding="10dp"
+        android:textColor="@color/DeepSkyBlue"
+        android:background="@drawable/bg_textview"
+
+        android:padding="10dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_account"
+        android:hint="请输入密码"
+        android:textSize="25sp"
+        android:drawableStart="@drawable/mima09"
+        android:drawablePadding="10dp"
+        android:textColor="@color/DeepSkyBlue"
+        android:background="@drawable/bg_textview"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginTop="20dp" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_radiogroup"
+        android:layout_below="@+id/et_password"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_1"
+            android:checked="false"
+            android:text="普通用户"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_2"
+            android:text="管理员"
+            />
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/radio_3"-->
+<!--            android:text="教研室主任"-->
+<!--            />-->
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/radio_4"-->
+<!--            android:text="管理员"-->
+<!--            />-->
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新用户注册"
+        android:textSize="20sp"
+        android:textColor="@color/SpringGreen"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_register"
+        android:text="登录"
+        android:gravity="center"
+        android:typeface="monospace"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button" />
+
+
+</RelativeLayout>

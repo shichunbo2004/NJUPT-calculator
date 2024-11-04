@@ -1,0 +1,42 @@
+<!-- activity_main.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/principalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入本金（元）"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/annualInterestRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入年利率（例如：5%）"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/loanTermInYearsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入借款年数"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计算每月还款额"/>
+
+    <TextView
+        android:id="@+id/monthlyPaymentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+
+</LinearLayout>
