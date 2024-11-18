@@ -1,4 +1,40 @@
 <resources>
-    <string name="app_name">科学计算器</string>
+  <string name="app_name">金培网金融计算器</string>
+
+  <string-array name="huobi">
+    <item>欧元</item>
+    <item>英镑</item>
+    <item>美元</item>
+    <item>日元</item>
+    <item>人民币</item>
+  </string-array>
+  <string-array name="zhongliang">
+    <item>毫克</item>
+    <item>克</item>
+    <item>千克</item>
+    <item>吨</item>
+
+  </string-array>
+  <string-array name="tiji">
+    <item>立方米</item>
+    <item>立方分米</item>
+    <item>立方厘米</item>
+    <item>立方毫米</item>
+    <item>立方毫米</item>
+  </string-array>
+  <string-array name="mianji">
+    <item>平方米</item>
+    <item>平方分米</item>
+    <item>平方厘米</item>
+    <item>平方毫米</item>
+    <item>平方公里</item>
+  </string-array>
+  <string-array name="changdu">
+    <item>米</item>
+    <item>千米</item>
+    <item>分米</item>
+    <item>厘米</item>
+    <item>毫米</item>
+  </string-array>
 
 </resources>

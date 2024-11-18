@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton add_information_img;
     private ImageButton bt_back_img;
     private ImageButton bt_enen_img;
+    private LinearLayout hui_zhuanhuan;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -62,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
         bt_chosed_title_img = (ImageButton) findViewById(R.id.chosed_title_img);
         add_information_img = (ImageButton) findViewById(R.id.information_img);
         bt_back_img = (ImageButton) findViewById(R.id.back_img);
+      hui_zhuanhuan=findViewById(R.id.hui_zhuanhuan);
+      hui_zhuanhuan.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+          Intent intent=new Intent(MainActivity.this,ZhuanhuanActivity.class);
+          startActivity(intent);
+
+        }
+      });
 
         bt_see_title_img.setOnClickListener(new View.OnClickListener() {
 

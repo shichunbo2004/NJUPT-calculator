@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_margin="10dp"
+  android:orientation="vertical"
+  tools:context=".ZhuanhuanActivity">
+  <TextView
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:textSize="30sp"
+    android:layout_width="match_parent"
+    android:text="长度转换"
+    android:layout_height="wrap_content"></TextView>
+
+  <TextView
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:layout_width="match_parent"
+    android:text="长度单位选择"
+    android:layout_height="wrap_content"></TextView>
+
+  <Spinner
+    android:id="@+id/sp1"
+    android:layout_width="match_parent"
+    android:entries="@array/changdu"
+    android:layout_height="40dp"></Spinner>
+
+
+  <TextView
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:layout_width="match_parent"
+    android:text="转换长度单位选择"
+    android:layout_height="wrap_content"></TextView>
+
+  <Spinner
+    android:id="@+id/sp2"
+    android:layout_width="match_parent"
+    android:entries="@array/changdu"
+    android:layout_height="40dp"></Spinner>
+
+  <EditText
+    android:id="@+id/et_exchange_quantity"
+    android:layout_width="match_parent"
+    android:hint="请输入需要转换的数量"
+    android:inputType="numberDecimal"
+    android:layout_height="45dp"></EditText>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="50dp">
+    <TextView
+      android:textSize="20sp"
+      android:layout_width="wrap_content"
+      android:text="转换结果："
+      android:layout_height="wrap_content"></TextView>
+    <TextView
+      android:id="@+id/tv_result"
+      android:layout_width="0dp"
+      android:gravity="center_vertical"
+      android:layout_weight="1"
+      android:layout_height="match_parent"></TextView>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <Button
+      android:id="@+id/bt_exchange"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_margin="10dp"
+      android:text="转换"
+      android:layout_height="wrap_content"></Button>
+    <Button
+      android:id="@+id/bt_add"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_margin="10dp"
+      android:text="添加转换关系"
+      android:layout_height="wrap_content"></Button>
+  </LinearLayout>
+
+
+
+</LinearLayout>

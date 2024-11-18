@@ -13,6 +13,36 @@
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
+            android:name=".AddChangduActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTijiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMianJiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddZhongliangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TijiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MianjiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ZhongliangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangduActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddZhuanhuanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ZhuanhuanActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -21,41 +51,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="true"></activity>
-
+            android:exported="true" />
         <activity
             android:name=".WeilaiMainActivity"
-            android:exported="true"></activity>
-
-
+            android:exported="true" />
         <activity
             android:name=".ZhaiActivity"
-            android:exported="true"></activity>
-
+            android:exported="true" />
         <activity
             android:name=".Ratectivity"
-            android:exported="true"></activity>
-
+            android:exported="true" />
         <activity
             android:name=".JisuanMainActivity"
-            android:exported="true"></activity>
-
+            android:exported="true" />
         <activity
             android:name=".MortgageActivity"
-            android:exported="true"></activity>
-
-
-
-
-
-
-
+            android:exported="true" />
     </application>
 
 </manifest>

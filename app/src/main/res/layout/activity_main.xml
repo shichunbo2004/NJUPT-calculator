@@ -163,6 +163,34 @@
 
         </LinearLayout>
 
+      <LinearLayout
+        android:id="@+id/hui_zhuanhuan"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <ImageView
+
+          android:layout_width="35dp"
+          android:layout_height="35dp"
+          android:layout_gravity="center_horizontal"
+          android:src="@mipmap/ic_zhuanhuan" />
+
+        <TextView
+
+          android:layout_width="wrap_content"
+          android:layout_height="25dp"
+          android:layout_gravity="center_horizontal"
+          android:gravity="top"
+          android:text="转换"
+          android:textColor="#82858b"
+          android:textSize="13dp" />
+
+      </LinearLayout>
+
 
 
 

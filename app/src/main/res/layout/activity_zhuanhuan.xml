@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".ZhuanhuanActivity">
+<TextView
+  android:textStyle="bold"
+  android:textColor="@color/black"
+  android:textSize="30sp"
+  android:layout_width="match_parent"
+  android:text="货币转换"
+  android:layout_height="wrap_content"></TextView>
+
+  <TextView
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:layout_width="match_parent"
+    android:text="货币种类选择"
+    android:layout_height="wrap_content"></TextView>
+
+  <Spinner
+    android:id="@+id/sp1"
+    android:layout_width="match_parent"
+    android:entries="@array/huobi"
+    android:layout_height="40dp"></Spinner>
+
+
+  <TextView
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:layout_width="match_parent"
+    android:text="兑换货币种类选择"
+    android:layout_height="wrap_content"></TextView>
+
+  <Spinner
+    android:id="@+id/sp2"
+    android:layout_width="match_parent"
+    android:entries="@array/huobi"
+    android:layout_height="40dp"></Spinner>
+
+  <EditText
+    android:id="@+id/et_exchange_quantity"
+    android:layout_width="match_parent"
+    android:hint="请输入需要兑换的金额"
+    android:inputType="numberDecimal"
+    android:layout_height="45dp"></EditText>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="50dp">
+    <TextView
+      android:textSize="20sp"
+      android:layout_width="wrap_content"
+      android:text="兑换结果："
+      android:layout_height="wrap_content"></TextView>
+    <TextView
+      android:id="@+id/tv_result"
+      android:layout_width="0dp"
+      android:gravity="center_vertical"
+      android:layout_weight="1"
+      android:layout_height="match_parent"></TextView>
+  </LinearLayout>
+<LinearLayout
+  android:layout_width="match_parent"
+  android:orientation="horizontal"
+  android:layout_height="wrap_content">
+  <Button
+    android:id="@+id/bt_exchange"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_margin="10dp"
+    android:text="兑换"
+    android:layout_height="wrap_content"></Button>
+  <Button
+    android:id="@+id/bt_add"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_margin="10dp"
+    android:text="添加兑换关系"
+    android:layout_height="wrap_content"></Button>
+</LinearLayout>
+
+
+  <TextView
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:textSize="30sp"
+    android:layout_width="match_parent"
+    android:text="基础数据转换"
+    android:layout_height="wrap_content"></TextView>
+  <Button
+    android:id="@+id/bt_changdu"
+    android:layout_width="match_parent"
+    android:text="长度转换"
+    android:layout_height="wrap_content"></Button>
+  <Button
+    android:id="@+id/bt_mianji"
+    android:layout_width="match_parent"
+    android:text="面积转换"
+    android:layout_height="wrap_content"></Button>
+  <Button
+    android:id="@+id/bt_tiji"
+    android:layout_width="match_parent"
+    android:text="体积转换"
+    android:layout_height="wrap_content"></Button>
+  <Button
+    android:id="@+id/bt_zhongliang"
+    android:layout_width="match_parent"
+    android:text="重量转换"
+    android:layout_height="wrap_content"></Button>
+
+</LinearLayout>
